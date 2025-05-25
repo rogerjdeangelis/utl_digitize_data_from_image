@@ -85,37 +85,36 @@ PROCESS
     Steps to digitize points or key locations on a image
 
     Pause slightly between point and click
-1. Open a dos command window
-2. Type R to bring up R editor
-3. Copy and paste teh code below
-    library(digitize)
-    tmp<-"d:/png/utl_dotplt.png"
-    res<-digitize(tmp)
-4. Crossairs will appear on the image
-    Define x y axis lengths
-    click on X1 in the plot (lower left)
-    wait a couple of seconds (1001 1002)
-    click on X2
-    wait a couple of seconds (1001 1002)
-    click on Y1
-    wait a couple of seconds (1001 1002)
-    click on Y2
- 5. Go to r command window answer questions
-     Type x1 '40' <enter>
-     Type x2 '160' <enter>
-     Type Y1 '50' <enter>
-     Type Y2 '75' <enter>
- 6. Crosshairs will appear on plot
-     click on the points (no wait?)
- 7  Left click then
- 7. Right click
-    click on continue  (click stop when done)
- 8. when all pint done  go to r command window
-    type 'res'   (this will list the x,y points)
- 9. save(res,file="d:/rda/res.rda")
-    or cut and paste into sas create
-    cards input
-
+    1. Open a dos command window
+    2. Type R to bring up R editor
+    3. Copy and paste teh code below
+        library(digitize)
+        tmp<-"d:/png/utl_dotplt.png"
+        res<-digitize(tmp)
+    4. Crossairs will appear on the image
+        Define x y axis lengths
+        click on X1 in the plot (lower left)
+        wait a couple of seconds (1001 1002)
+        click on X2
+        wait a couple of seconds (1001 1002)
+        click on Y1
+        wait a couple of seconds (1001 1002)
+        click on Y2
+     5. Go to r command window answer questions
+         Type x1 '40' <enter>
+         Type x2 '160' <enter>
+         Type Y1 '50' <enter>
+         Type Y2 '75' <enter>
+     6. Crosshairs will appear on plot
+         click on the points (no wait?)
+     7  Left click then
+     7. Right click
+        click on continue  (click stop when done)
+     8. when all pint done  go to r command window
+        type 'res'   (this will list the x,y points)
+     9. save(res,file="d:/rda/res.rda")
+        or cut and paste into sas create
+        cards input
 
         Return to SAS and run the solution below
 
